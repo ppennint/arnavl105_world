@@ -3,7 +3,7 @@ class Article < ActiveRecord::Base
 
 	belongs_to :category
 
-	validates_prescense_of :title, :content
+	validates_presence_of :title, :content
 
 
   scope :active, where('active = ?', true)
